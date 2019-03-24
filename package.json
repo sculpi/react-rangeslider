@@ -8,7 +8,7 @@
     "clean:docs": "del public",
     "clean": "npm run clean:lib && npm run clean:docs",
     "lint": "eslint src docs",
-    "test": "npm run lint && jest",
+    "test": "npm run lint",
     "coverage": "npm test -- --coverage",
     "start": "cross-env NODE_ENV=development node -r babel-register docs/server.js",
     "build:less": "lessc ./src/Rangeslider.less ./lib/index.css",
